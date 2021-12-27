@@ -5,7 +5,6 @@
 }
 
 .home__content-wrapper {
-  max-width: 1820px;
   background-image: url("../images/home/Heading.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -18,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .home__content-container h2 {
   font-family: Quicksand;
@@ -86,9 +86,8 @@
 }
 
 .stats__content-wrapper {
-  max-width: 1820px;
   background-image: url("../images/home/Stats.png");
-  background-position: center center;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -98,12 +97,14 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   row-gap: 30px;
   min-height: 600px;
   padding: 190px 0;
 }
 
-.stats__column {
+.stat {
   display: grid;
   justify-content: center;
   justify-items: center;
@@ -111,24 +112,140 @@
   row-gap: 20px;
 }
 
-.stats__text {
+.stat__image {
+  display: flex;
+  align-items: flex-end;
+  min-height: 135px;
+}
+
+.stat__text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.stats__text span {
+.stat__text span {
   font-family: Waiting for the Sunrise;
   font-size: 60px;
   font-weight: 300;
-  line-height: 99px;
+  line-height: 60px;
   color: #DFEEB6;
 }
-.stats__text p {
+.stat__text p {
   font-family: Quicksand;
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
   color: #fff;
+}
+
+/*=== /section-stats ===*/
+/*=== section-stats ===*/
+.team {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.team__content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team__content-container h2 {
+  font-family: Quicksand;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 63px;
+}
+.team__content-container p {
+  font-family: Waiting for the Sunrise;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #F7A1A8;
+}
+
+.members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
+  min-height: 600px;
+  padding: 40px 0;
+}
+
+.member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+  min-width: 560px;
+  padding: 25px 0;
+}
+.member.image-left {
+  background: linear-gradient(90deg, #fff 165px, transparent 165px);
+}
+.member.image-right {
+  background: linear-gradient(270deg, #fff 165px, transparent 165px);
+}
+.member.image-right .member__text {
+  text-align: right;
+}
+.member.image-right .social {
+  justify-content: flex-end;
+}
+.member:nth-of-type(1), .member:nth-of-type(4) {
+  background-color: #C9E3F4;
+}
+.member:nth-of-type(2), .member:nth-of-type(3) {
+  background-color: #DFEEB6;
+}
+
+.member__image {
+  display: flex;
+  align-items: flex-end;
+  min-height: 330px;
+  min-width: 330px;
+}
+.member__image img {
+  border-radius: 50%;
+}
+
+.member__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+  padding: 0 15px;
+}
+.member__text h2 {
+  font-family: Quicksand;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+.member__text span {
+  margin-bottom: 12px;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #433840;
+}
+.member__text p {
+  margin-bottom: 12px;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #433840;
+}
+.member__text .social {
+  display: flex;
+  gap: 15px;
 }
 
 /*=== /section-stats ===*//*# sourceMappingURL=home.css.map */

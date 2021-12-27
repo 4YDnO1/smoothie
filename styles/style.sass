@@ -106,7 +106,7 @@ $header_height: 90px
         font-size: 18px
         line-height: 23px
 
-        color: ##433840
+        color: #433840
         &:hover
             color:#FEA3AC
 
@@ -125,11 +125,89 @@ $header_height: 90px
 .footer
     position: relative
 
+.footer__top-wrapper
+    background-image: url('../images/footer/footer-background.png')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
 
-.footer__content-container
-    position: relative
+.footer__top-container
     display: flex
-    flex-direction: column
-    row-gap: 50px
+    justify-content: space-between
+    column-gap: 40px
+    row-gap: 20px
+    flex-wrap: wrap
+    padding: 50px 0
 
+.footer__opening,
+.footer__contact,
+.footer__inst-feed
+    h2
+        margin-bottom: 25px
+        font-family: Quicksand
+        font-size: 30px
+        font-weight: 700
+        line-height: 38px
+
+        color: #fff
+    
+.footer__opening
+    p
+        font-family: Quicksand
+        font-size: 20px
+        line-height: 35px
+
+        color: #fff
+        span
+            color: #DFEEB6
+
+.footer__contact
+    img
+        display: flex
+        flex-shrink: 0
+        min-width: 34px
+        margin-right: 10px
+
+    span,
+    a
+        display: flex
+        font-family: Quicksand
+        font-size: 20px
+        line-height: 35px
+
+        color: #fff
+    
+    span
+        font-weight: 700
+
+.contact__mail
+    text-decoration: underline
+
+.inst-feed__images
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    max-width: 350px
+
+
+
+
+.footer__bottom-wrapper
+    background-color: #433840
+    
+.footer__bottom-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 60px
+
+.footer__copyright
+    font-family: Quicksand
+    font-size: 15px
+    line-height: 35px
+    color: #fff
+
+.footer__social
+    display: flex
+    column-gap: 10px
 /*=== /footer ===*/
